@@ -1,0 +1,25 @@
+extends layout/main
+
+block variables
+  - var title = "Webpack and Pug";
+  - var description = "Template for building frontends";
+  - var pageClass = "index-page";
+
+block content
+
+  .info#art1
+    +article(
+      "Статья про программирование",
+      "Текст статьи. Многа букаф. "
+      )
+    img.inlinepix(src='./assets/img/m_2.png', alt='m2', srcset='')
+    p
+
+  article.even
+
+
+
+
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js')

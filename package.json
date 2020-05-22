@@ -1,0 +1,56 @@
+{
+    "name": "utils-webpack",
+    "version": "1.0.0",
+    "description": "Simple utilities to compare different frameworks. This one is based on webpack and preprocessors. ",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpack-dev-server --open --config build/webpack.dev.conf.js",
+        "build": "webpack --config build/webpack.build.conf.js"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 3 version"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/skripkalisa/utils-webpack.git"
+    },
+    "keywords": [
+        "webpack",
+        "preprocs",
+        "calc"
+    ],
+    "author": "skripkalisa",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/skripkalisa/utils-webpack/issues"
+    },
+    "homepage": "https://github.com/skripkalisa/utils-webpack#readme",
+    "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.0",
+        "autoprefixer": "^9.7.5",
+        "babel-loader": "^8.1.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^5.1.1",
+        "css-loader": "^3.4.2",
+        "css-mqpacker": "^7.0.0",
+        "cssnano": "^4.1.10",
+        "file-loader": "^6.0.0",
+        "filemanager-webpack-plugin": "^2.0.5",
+        "html-webpack-plugin": "^4.0.2",
+        "mini-css-extract-plugin": "^0.9.0",
+        "path": "^0.12.7",
+        "postcss-loader": "^3.0.0",
+        "pug": "^2.0.4",
+        "pug-loader": "^2.4.0",
+        "style-loader": "^1.1.3",
+        "stylus": "^0.54.7",
+        "stylus-loader": "^3.0.2",
+        "webpack": "^4.42.0",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3",
+        "webpack-merge": "^4.2.2"
+    }
+}

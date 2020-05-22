@@ -1,0 +1,14 @@
+node_modules/
+dist/
+old/
+public/
+.vscode
+*.[oa]
+!.babelrc
+!.gitignore
+!build/
+!package.json
+!package-lock.json
+!src/
+working-pug.zip
+working.zip
