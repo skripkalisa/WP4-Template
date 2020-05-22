@@ -1,7 +1,7 @@
 {
-    "name": "utils-webpack",
-    "version": "1.0.0",
-    "description": "Simple utilities to compare different frameworks. This one is based on webpack and preprocessors. ",
+    "name": "webpack-template",
+    "version": "1.1.0",
+    "description": "Webpack 4 template with pug, stylus and babel ",
     "private": true,
     "main": "index.js",
     "scripts": {
@@ -14,7 +14,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/skripkalisa/utils-webpack.git"
+        "url": "git+https://github.com/"
     },
     "keywords": [
         "webpack",
@@ -24,9 +24,9 @@
     "author": "skripkalisa",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/skripkalisa/utils-webpack/issues"
+        "url": "https://github.com/"
     },
-    "homepage": "https://github.com/skripkalisa/utils-webpack#readme",
+    "homepage": "https://github.com//#readme",
     "devDependencies": {
         "@babel/core": "^7.9.0",
         "@babel/preset-env": "^7.9.0",
