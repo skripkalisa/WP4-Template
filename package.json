@@ -21,10 +21,10 @@
         "preprocs",
         "calc"
     ],
-    "author": "skripkalisa",
+    "author": "name",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/"
+        "url": "https://github.com//issues"
     },
     "homepage": "https://github.com//#readme",
     "devDependencies": {
