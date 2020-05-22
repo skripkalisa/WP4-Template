@@ -1,24 +1,24 @@
 extends layout/main
 
 block variables
-  - var title = "Webpack and Pug";
-  - var description = "Template for building frontends";
+  - var title = "Index Page Title";
+  - var description = "Project description";
   - var pageClass = "index-page";
 
 block content
 
-  .info#art1
+  .info
+    hr
     +article(
-      "Статья про программирование",
-      "Текст статьи. Многа букаф. "
-      )
-    img.inlinepix(src='./assets/img/m_2.png', alt='m2', srcset='')
-    p
-
-  article.even
-
-
-
+      'Article1 Title',
+      'Article1 Text'
+      ).odd
+    hr
+    +article(
+      'Article2 Title',
+      'Article2 Text'
+      ).even
+    hr
 
   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
