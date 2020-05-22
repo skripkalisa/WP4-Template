@@ -1,6 +1,6 @@
 {
     "name": "webpack-template",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Webpack 4 template with pug, stylus and babel ",
     "private": true,
     "main": "index.js",
@@ -18,8 +18,9 @@
     },
     "keywords": [
         "webpack",
-        "preprocs",
-        "calc"
+        "pug",
+        "sylus",
+        "babel"
     ],
     "author": "name",
     "license": "ISC",
