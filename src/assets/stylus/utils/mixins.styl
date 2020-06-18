@@ -7,11 +7,11 @@ rem($pixels, $context = $mainFontSize)
   if unitless($context)
     $context = $context * 1px
   $pixels / $context * 1rem
-// size to one line
+// set size with 1 or 2 params
 size($width, $height = $width)
   width: $width
   height: $height
-// placeholder helper
+// placeholder mixin
 placeholder()
   ::-webkit-input-placeholder
     {block}
@@ -22,39 +22,35 @@ placeholder()
   :-ms-input-placeholder
     {block}
 /* Fonts Helpers:
-   Read more: https://github.com/vedees/webpack-template/blob/master/README.md#add-fonts
-   ========================================================================== */
-/*
-  By default template support only modern format fonts
-  Without svg. Only: .woff, .woffs
-  if ypu need svg comments lines bellow and uncomments "Fonts helper all format fonts"
+=====================================================
+  By default template supports only modern font formats:
+  .woff, .woffs
+  For legacy fonts comment "Default: Modern fonts" mixin and uncomment "Modern and legacy fonts" mixin.
 
   Usage:
-    1. Put your font to `src/assets/fonts/FOLDERNAME/FONTNAME`
-      FOLLOW: Files Required
-      Example: .woff, .woffs formats
-    2. Go to fonts.scss
-    3. Use mixon
-      Example: @include font-face("OpenSans", "../fonts/OpenSans/opensans");
+    1. Store your fonts into your fonts directory. By default it is `src/assets/fonts/FOLDERNAME/FONTNAME`
+    2. Edit fonts.styl as needed.
+    3. Mixin usage example: 
+       @include font-face("OpenSans", "../fonts/OpenSans/opensans");
 
     Required parameters: @family, @family
-    Minor parameters: @weight, @style, @pipeline
+    Optional parameters: @weight, @style, @pipeline
 
-    Example Base:
+    Example basi:
       @include font-face("OpenSans", "../fonts/OpenSans/opensans");
-    Example Situation:
+    Example custom:
       @include font-face("OpenSans", "../fonts/OpenSans/opensansItalic", 400, italic);
 */
-// Default: For modern format fonts
-// Files Required: .woff, .woffs
+// Default: Modern fonts
+// Required file format(s): .woff, .woffs
 font-face($font-family, $file-path, $weight = normal, $style = normal, $asset-pipeline = false)
   @font-face
     font-family: $font-family
     font-weight: $weight
     font-style: $style
     src: url("{$file-path}.woff") format("woff"), url("{$file-path}.woff2") format("woff2")
-// For Modern format fonts + .svg
-// Files Required: .woff, .woffs, .svg
+// Modern fonts + .svg
+// Required file format(s): .woff, .woffs, .svg
 // @mixin font-face(
 //   $font-family,
 //   $file-path,
@@ -73,8 +69,8 @@ font-face($font-family, $file-path, $weight = normal, $style = normal, $asset-pi
 //       url("#{$file-path}.ttf") format("truetype");
 //   }
 // }
-// For Modern format fonts + .svg
-// Files Required: eot. .woff, .woffs, .svg, .ttf
+// Modern and legacy fonts
+// Required file format(s): eot. .woff, .woffs, .svg, .ttf
 // @mixin font-face(
 //   $font-family,
 //   $file-path,
